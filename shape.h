@@ -102,3 +102,11 @@ public:
     }
 };
 
+class Triangle : public Shape {
+public:
+    Triangle() {}
+
+    bool testIntersection(const Ray ray, InterSectionPoint& point) override {
+        return point.exist;
+    }
+};

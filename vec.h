@@ -77,6 +77,16 @@ public:
         return v;
     }
 
+    template<class T>
+    Vec operator/(const T n) const
+    {
+        Vec v(
+            this->x / n,
+            this->y / n,
+            this->z / n);
+        return v;
+    }
+
     float dot(const Vec& vec) const
     {
         float ret =
